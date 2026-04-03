@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaMock — Singapore Tax Calculator</title>
+  <meta name="description" content="Modern Singapore tax estimation tool for personal and corporate income tax. Based on official IRAS guidance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">NT</span>
+        NovaMock
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="personal-tax.html" class="nav-link">Personal Tax</a></li>
+        <li><a href="corporate-tax.html" class="nav-link">Corporate Tax</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme"></button>
+        <button class="mobile-nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Singapore Tax Estimation Tool
+      </div>
+      <h1>Calculate Your Singapore Taxes with Confidence</h1>
+      <p>A modern, transparent tax calculator for personal and corporate income tax — built on official IRAS guidance. Free, fast, and easy to use.</p>
+      <div class="hero-actions">
+        <a href="personal-tax.html" class="btn btn-primary btn-hero">Personal Income Tax</a>
+        <a href="corporate-tax.html" class="btn btn-outline btn-hero">Corporate Income Tax</a>
+      </div>
+    </section>
+
+    <!-- Calculator Cards -->
+    <section class="section-divider">
+      <h2>Choose a Calculator</h2>
+      <p>Select the calculator that matches your needs</p>
+    </section>
+
+    <div class="calc-cards">
+      <a href="personal-tax.html" class="calc-card fade-in">
+        <div class="card-emoji" style="background: var(--info-bg); color: var(--info);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Personal Income Tax</h3>
+        <p>Estimate your individual income tax using Singapore's progressive tax rates. Includes deductions, reliefs, and bracket-by-bracket breakdown.</p>
+        <span class="card-arrow">
+          Calculate now
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="corporate-tax.html" class="calc-card fade-in">
+        <div class="card-emoji" style="background: var(--success-bg); color: var(--success);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Corporate Income Tax</h3>
+        <p>Estimate your company's tax liability at Singapore's 17% flat rate. Includes start-up exemption, partial exemption, and CIT rebate logic.</p>
+        <span class="card-arrow">
+          Calculate now
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+    </div>
+
+    <!-- Features -->
+    <section class="section-divider">
+      <h2>Why NovaMock?</h2>
+      <p>Built for transparency, accuracy, and ease of use</p>
+    </section>
+
+    <div class="features">
+      <div class="feature-item fade-in">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h4>IRAS-Aligned</h4>
+          <p>Based on official Singapore tax rates and exemption rules published by IRAS.</p>
+        </div>
+      </div>
+      <div class="feature-item fade-in">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <h4>Real-Time Calculation</h4>
+          <p>Tax figures update instantly as you type — no page refreshes or form submissions needed.</p>
+        </div>
+      </div>
+      <div class="feature-item fade-in">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <div>
+          <h4>Bracket Breakdown</h4>
+          <p>See exactly how your tax is computed across each bracket — no black-box calculations.</p>
+        </div>
+      </div>
+      <div class="feature-item fade-in">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </div>
+        <div>
+          <h4>Dark & Light Modes</h4>
+          <p>Toggle between themes with automatic preference detection. Works beautifully either way.</p>
+        </div>
+      </div>
+      <div class="feature-item fade-in">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div>
+          <h4>Print-Friendly</h4>
+          <p>Export or print your tax summary for personal records or advisor review.</p>
+        </div>
+      </div>
+      <div class="feature-item fade-in">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div>
+          <h4>Responsive Design</h4>
+          <p>Works seamlessly on desktop, tablet, and mobile devices.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+      <p>
+        <strong>Disclaimer:</strong> This tool provides <strong>estimates only</strong> and is not a substitute for professional tax advice.
+        Actual tax liability may differ based on individual circumstances. Please verify with
+        <a href="https://www.iras.gov.sg" target="_blank" rel="noopener noreferrer">IRAS</a> or a qualified tax professional before filing.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 NovaMock. For educational and estimation purposes only. Not affiliated with IRAS.</p>
+    <p style="margin-top: 0.5rem;">Powered by <a href="https://www.tertiarycourses.com.sg/" target="_blank" rel="noopener noreferrer">Tertiary Infotech Academy Pte Ltd</a></p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
